@@ -1,0 +1,112 @@
+<html><head><base href="https://udio.prompt.writer/">
+    <title>Udio Prompt Writer</title>
+    <style>
+        body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 12px; }
+        .container { display: flex; flex-wrap: wrap; }
+        .section { width: calc(25% - 10px); margin: 5px; }
+        h1 { width: 100%; text-align: center; font-size: 24px; margin: 10px 0; }
+        h2 { font-size: 14px; margin: 5px 0; border-bottom: 1px solid #ccc; }
+        .options { display: flex; flex-wrap: wrap; gap: 2px; }
+        button { font-size: 10px; padding: 2px 4px; background: #f0f0f0; border: 1px solid #ccc; cursor: pointer; }
+        button.selected { background: #3498db; color: white; }
+        textarea { width: calc(100% - 10px); height: 100px; margin: 5px; }
+    </style>
+<script type="text/javascript" nonce="3ef5692b142a4420908a6375302" src="//local.adguard.org?ts=1720691028772&amp;type=content-script&amp;dmn=websim.ai&amp;url=https%3A%2F%2Fwebsim.ai%2Fapi%2Fhtml%3Fpayload%3D%257B%2522id%2522%253A%2522YBxcwDs7SBVHOn5SS%2522%252C%2522debug%2522%253A%2522true%2522%252C%2522raw%2522%253A%2522true%2522%257D&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="3ef5692b142a4420908a6375302" src="//local.adguard.org?ts=1720691028772&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script></head>
+<body>
+    <h1>Udio Prompt Writer</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Main Genres</h2>
+            <div class="options" id="mainGenre">
+                <button>Alternative</button><button>Ambient</button><button>Blues</button><button>Classical</button><button>Country</button><button>EDM</button><button>Electronic</button><button>Folk</button><button>Funk</button><button>Gospel</button><button>Hip Hop</button><button>Indie</button><button>Jazz</button><button>Latin</button><button>Metal</button><button>Pop</button><button>Punk</button><button>R&B</button><button>Rap</button><button>Reggae</button><button>Rock</button><button>Soul</button><button>Techno</button><button>World Music</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Subgenres</h2>
+            <div class="options" id="subgenre">
+                <button>Acid House</button><button>Afrobeat</button><button>Art Rock</button><button>Avant-Garde</button><button>Baroque Pop</button><button>Black Metal</button><button>Bluegrass</button><button>Bossa Nova</button><button>Breakcore</button><button>Britpop</button><button>Chillwave</button><button>Dancehall</button><button>Dark Ambient</button><button>Death Metal</button><button>Deconstructed Club</button><button>Deep House</button><button>Disco</button><button>Doom Metal</button><button>Drone</button><button>Drum and Bass</button><button>Dub</button><button>Dubstep</button><button>Electro Swing</button><button>Electroclash</button><button>Emo</button><button>Experimental</button><button>Fado</button><button>Flamenco</button><button>Footwork</button><button>Freak Folk</button><button>Funeral Doom</button><button>Gabber</button><button>Garage Rock</button><button>Glam Rock</button><button>Glitch</button><button>Goa Trance</button><button>Goregrind</button><button>Gothic Rock</button><button>Grime</button><button>Grindcore</button><button>Grunge</button><button>Hard Bop</button><button>Hardcore Punk</button><button>Hardstyle</button><button>House</button><button>IDM</button><button>Industrial</button><button>J-pop</button><button>Jungle</button><button>K-pop</button><button>Krautrock</button><button>Lo-fi</button><button>Math Rock</button><button>Melodic Death Metal</button><button>Minimal Techno</button><button>Neo-Psychedelia</button><button>Neo-Soul</button><button>New Wave</button><button>No Wave</button><button>Noise Rock</button><button>Nu Metal</button><button>Post-Dubstep</button><button>Post-Punk</button><button>Post-Rock</button><button>Power Metal</button><button>Progressive Metal</button><button>Progressive Rock</button><button>Psychedelic Rock</button><button>Psytrance</button><button>Reggaeton</button><button>Shoegaze</button><button>Ska</button><button>Sludge Metal</button><button>Smooth Jazz</button><button>Soft Rock</button><button>Speed Metal</button><button>Stoner Rock</button><button>Symphonic Metal</button><button>Synthpop</button><button>Synthwave</button><button>Tech House</button><button>Thrash Metal</button><button>Trap</button><button>Trip Hop</button><button>Tropical House</button><button>UK Garage</button><button>Vaporwave</button><button>Viking Metal</button><button>Visual Kei</button><button>Witch House</button><button>Zydeco</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Fictional/Conceptual Genres</h2>
+            <div class="options" id="fictionalGenre">
+                <button>Alien Funk</button><button>Aquatic Ambient</button><button>Astral Jazz</button><button>Biomechanical Breakbeat</button><button>Celestial Chant</button><button>Chromatic Chaos</button><button>Clockwork Classical</button><button>Cosmic Country</button><button>Cryogenic Crunk</button><button>Cyberpunk Swing</button><button>Dimensional Disco</button><button>Dreamscape Pop</button><button>Eco-Tribal</button><button>Ethereal Grunge</button><button>Folklore Fusion</button><button>Fractal Folk</button><button>Galactic Gospel</button><button>Geomancy Groove</button><button>Holographic Hip-Hop</button><button>Hyperdimensional Hardcore</button><button>Interstellar Blues</button><button>Kinetic Kuduro</button><button>Lunar Lullabies</button><button>Mecha Metal</button><button>Metamorphic Motown</button><button>Microtonal Madness</button><button>Mystic Microhouse</button><button>Nanotech Noise</button><button>Nebula Noir</button><button>Necromantic Neo-Soul</button><button>Neurological Noisescapes</button><button>Paranormal Polka</button><button>Photosynthetic Funk</button><button>Quantum Qawwali</button><button>Retro-Futuristic Ragtime</button><button>Shamanic Shoegaze</button><button>Sidereal Samba</button><button>Spectral Speedcore</button><button>Steampunk Symphony</button><button>Subatomic Ska</button><button>Supernova Swing</button><button>Temporal Trance</button><button>Tesseract Techno</button><button>Time-Traveler's Techno</button><button>Transmutation Tango</button><button>Utopian Underground</button><button>Volcanic Vaporwave</button><button>Wormhole Waltz</button><button>Xenharmonic Experiments</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Mood</h2>
+            <div class="options" id="mood">
+                <button>Adventurous</button><button>Aggressive</button><button>Anxious</button><button>Apocalyptic</button><button>Bittersweet</button><button>Blissful</button><button>Calm</button><button>Chaotic</button><button>Cinematic</button><button>Confident</button><button>Contemplative</button><button>Dark</button><button>Defiant</button><button>Determined</button><button>Dramatic</button><button>Dreamy</button><button>Ecstatic</button><button>Eerie</button><button>Empowering</button><button>Energetic</button><button>Enigmatic</button><button>Ethereal</button><button>Euphoric</button><button>Fiery</button><button>Gentle</button><button>Gloomy</button><button>Graceful</button><button>Haunting</button><button>Heroic</button><button>Hopeful</button><button>Hypnotic</button><button>Introspective</button><button>Joyful</button><button>Laid-back</button><button>Longing</button><button>Majestic</button><button>Melancholic</button><button>Mischievous</button><button>Mysterious</button><button>Nostalgic</button><button>Ominous</button><button>Passionate</button><button>Peaceful</button><button>Playful</button><button>Powerful</button><button>Reflective</button><button>Relaxed</button><button>Restless</button><button>Romantic</button><button>Sombre</button><button>Soothing</button><button>Suspenseful</button><button>Tense</button><button>Tranquil</button><button>Transcendent</button><button>Triumphant</button><button>Uplifting</button><button>Urgent</button><button>Whimsical</button><button>Wistful</button><button>Yearning</button><button>Zen</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Instruments</h2>
+            <div class="options" id="instruments">
+                <button>Accordion</button><button>Acoustic Guitar</button><button>Bagpipes</button><button>Balalaika</button><button>Banjo</button><button>Bass Guitar</button><button>Bassoon</button><button>Bongos</button><button>Cello</button><button>Charango</button><button>Clarinet</button><button>Clavinet</button><button>Didgeridoo</button><button>Djembe</button><button>Dobro</button><button>Drums</button><button>Electric Guitar</button><button>Erhu</button><button>Euphonium</button><button>Fiddle</button><button>Flute</button><button>French Horn</button><button>Glockenspiel</button><button>Guzheng</button><button>Hammond Organ</button><button>Harmonica</button><button>Harp</button><button>Harpsichord</button><button>Kalimba</button><button>Koto</button><button>Mandolin</button><button>Marimba</button><button>Mellotron</button><button>Moog Synthesizer</button><button>Oboe</button><button>Ocarina</button><button>Oud</button><button>Pan Flute</button><button>Piano</button><button>Piccolo</button><button>Pipe Organ</button><button>Sitar</button><button>Slide Guitar</button><button>Steel Drums</button><button>Synthesizer</button><button>Tabla</button><button>Tambourine</button><button>Theremin</button><button>Trombone</button><button>Trumpet</button><button>Ukulele</button><button>Violin</button><button>Xylophone</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Tempo</h2>
+            <div class="options" id="tempo">
+                <button>Very Slow (40-60 BPM)</button><button>Slow (60-80 BPM)</button><button>Moderate (80-120 BPM)</button><button>Fast (120-160 BPM)</button><button>Very Fast (160+ BPM)</button><button>Variable</button><button>Accelerando</button><button>Ritardando</button><button>Rubato</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Production Style</h2>
+            <div class="options" id="productionStyle">
+                <button>Minimalist</button><button>Maximalist</button><button>Lo-fi</button><button>Hi-fi</button><button>Acoustic</button><button>Synthetic</button><button>Orchestral</button><button>Experimental</button><button>Glitch</button><button>Granular</button><button>Organic</button><button>Distorted</button><button>Clean</button><button>Compressed</button><button>Spacious</button><button>Layered</button><button>Raw</button><button>Polished</button><button>Atmospheric</button><button>Percussive</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Era</h2>
+            <div class="options" id="era">
+                <button>Ancient</button><button>Medieval</button><button>Renaissance</button><button>Baroque</button><button>Classical</button><button>Romantic</button><button>1920s</button><button>1950s</button><button>1960s</button><button>1970s</button><button>1980s</button><button>1990s</button><button>2000s</button><button>2010s</button><button>Contemporary</button><button>Futuristic</button><button>Retro-Futuristic</button><button>Timeless</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Cultural Influence</h2>
+            <div class="options" id="culturalInfluence">
+                <button>African</button><button>Arabic</button><button>Balkan</button><button>Caribbean</button><button>Celtic</button><button>East Asian</button><button>European</button><button>Indian</button><button>Latin American</button><button>Mediterranean</button><button>Middle Eastern</button><button>Nordic</button><button>Oceanic</button><button>Persian</button><button>Slavic</button><button>South Asian</button><button>Southeast Asian</button><button>Sub-Saharan</button><button>Western</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Generated Music Prompt</h2>
+            <textarea id="generatedPrompt" readonly></textarea>
+        </div>
+        <div class="section">
+            <h2>Udio AI Optimized Music Prompt</h2>
+            <textarea id="optimizedPrompt" readonly></textarea>
+        </div>
+    </div>
+
+    <script>
+        const sections = ['mainGenre', 'subgenre', 'fictionalGenre', 'mood', 'instruments', 'tempo', 'productionStyle', 'era', 'culturalInfluence'];
+        const selections = {};
+
+        sections.forEach(section => {
+            const buttons = document.querySelectorAll(`#${section} button`);
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('selected');
+                    updatePrompt();
+                });
+            });
+        });
+
+        function updatePrompt() {
+            sections.forEach(section => {
+                selections[section] = Array.from(document.querySelectorAll(`#${section} button.selected`))
+                    .map(button => button.textContent);
+            });
+
+            const promptParts = sections.flatMap(section => selections[section]);
+            const generatedPrompt = promptParts.join(', ');
+            document.getElementById('generatedPrompt').value = generatedPrompt;
+
+            const optimizedPrompt = `Generate a ${promptParts.length > 0 ? promptParts.join(', ') + ' ' : ''}track`;
+            document.getElementById('optimizedPrompt').value = optimizedPrompt;
+        }
+    </script>
+</body>
+</html>
